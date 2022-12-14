@@ -1,0 +1,158 @@
+        .steformdiv #header {
+            text-align: center;
+            border-bottom: solid 1px #b2b3b5;
+            margin: 0 0 20px 0;
+        }
+
+        .steformdiv legend {
+            font-size: 18px;
+            margin: 0px;
+            padding: 10px 0px;
+            color: #b0232a;
+            font-weight: bold;
+        }
+
+
+        .steformdiv button,
+        .steformdiv .prev,
+        .steformdiv .next {
+            background-color: #b0232a;
+            padding: 5px 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .steformdiv button:hover,
+        .steformdiv .prev:hover,
+        .steformdiv .next:hover {
+            background-color: #000;
+            text-decoration: none;
+        }
+
+.steformdiv .prev {
+    background-color: #191919;
+}
+
+.steformdiv .next {
+    background-color: #3461ff;
+}
+
+.steformdiv input#SaveAccount {
+     background-color: #12bf24;
+}
+
+
+        .steformdiv button {
+            border: none;
+        }
+
+        .steformdiv #controls {
+            background: #eee;
+            box-shadow: 0 0 16px #999;
+            height: 30px;
+            position: fixed;
+            padding: 10px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1
+        }
+
+        .steformdiv #controls h1 {
+            color: #666;
+            display: inline-block;
+            margin: 0 0 8px 0
+        }
+
+        .steformdiv #controls input[type=text] {
+            border-color: #999;
+            margin: 0 25px;
+            width: 120px
+        }
+
+        .steformdiv .prev {
+            float: left
+        }
+
+        .steformdiv .next {
+            float: right
+        }
+
+        .steformdiv .steps {
+            list-style: none;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0
+        }
+
+        .steformdiv .steps li {
+            color: #1f1f1f;
+            font-size: 24px;
+            float: left;
+            padding: 12px 20px;
+            transition: all .3s;
+            -moz-transition: all .3s;
+            -webkit-transition: all .3s;
+            -o-transition: all .3s
+        }
+
+        .steformdiv .steps li span {
+            font-size: 11px;
+            display: block
+        }
+
+        .steformdiv .steps li.current {
+            color: #000
+        }
+
+
+
+        .steformdiv .breadcrumb li {
+            background: #eee;
+            font-size: 14px
+        }
+
+.steformdiv .breadcrumb li.current:after {
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 10px solid #666;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+        .steformdiv .breadcrumb li.current {
+            background: #666;
+            color: #fff;
+            position: relative
+        }
+
+        .steformdiv .breadcrumb li:last-child:after {
+            border: none
+        }
+
+        .steformdiv .row>* {
+    margin-top: 15px;
+}
+
+.steformdiv label.btn.btn-outline-success {
+    border-color: #ddd;
+    color: #7e7e7e;
+}
+
+.steformdiv label.btn.btn-outline-success:hover {
+    color: #fff;
+    background-color: #12bf24;
+    border-color: #12bf24;
+}
+
+.steformdiv .btn-check:active+.btn-outline-success, 
+.steformdiv .btn-check:checked+.btn-outline-success, 
+.steformdiv .btn-outline-success.active, 
+.steformdiv .btn-outline-success.dropdown-toggle.show, 
+.steformdiv .btn-outline-success:active {
+    color: #fff;
+    background-color: #12bf24;
+    border-color: #12bf24;
+}
