@@ -67,7 +67,7 @@ use App\Http\Controllers\frontend\SalaryController;
 */
 
 Route::any('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
 
 Auth::routes();
