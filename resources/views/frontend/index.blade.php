@@ -5,7 +5,7 @@
 <div class="row">
 <div class="col-lg-6">
 <div class="hero-text">
-<h1>Sona A Luxury Hotel</h1>
+<h1>SPResidence A Luxury Hotel</h1>
 <p>Here are the best hotel booking sites, including recommendations for international
 travel and for finding low-priced hotel rooms.</p>
 <a href="#" class="primary-btn">Discover Now</a>
@@ -62,7 +62,7 @@ travel and for finding low-priced hotel rooms.</p>
 <span>About Us</span>
 <h2>Intercontinental LA <br />Westlake Hotel</h2>
 </div>
-<p class="f-para">Sona.com is a leading online accommodation site. We’re passionate about
+<p class="f-para">SPResidence.com is a leading online accommodation site. We’re passionate about
 travel. Every day, we inspire and reach millions of travelers across 90 local websites in 41
 languages.</p>
 <p class="s-para">So when it comes to booking the perfect hotel, vacation rental, resort,
@@ -294,7 +294,7 @@ labore et dolore magna.</p>
 <p>After a construction project took longer than expected, my husband, my daughter and I
 needed a place to stay for a few nights. As a Chicago resident, we know a lot about our
 city, neighborhood and the types of housing options available and absolutely love our
-vacation at Sona Hotel.</p>
+vacation at SPResidence Hotel.</p>
 <div class="ti-author">
 <div class="rating">
 <i class="icon_star"></i>
@@ -311,7 +311,7 @@ vacation at Sona Hotel.</p>
 <p>After a construction project took longer than expected, my husband, my daughter and I
 needed a place to stay for a few nights. As a Chicago resident, we know a lot about our
 city, neighborhood and the types of housing options available and absolutely love our
-vacation at Sona Hotel.</p>
+vacation at SPResidence Hotel.</p>
 <div class="ti-author">
 <div class="rating">
 <i class="icon_star"></i>

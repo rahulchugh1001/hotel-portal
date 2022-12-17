@@ -5,7 +5,7 @@
 <div class="col-lg-4">
 <div class="ft-about">
 <div class="logo">
-<a href="#">
+<a href="{{route('index')}}">
 <img src="{{asset('frontend/img/logo.png')}}" alt="">
 </a>
 </div>

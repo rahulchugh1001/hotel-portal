@@ -53,7 +53,8 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\frontend\SelfCareController; 
 use App\Http\Controllers\frontend\OfficeVisitorController; 
 use App\Http\Controllers\frontend\SalaryController; 
-use App\Http\Controllers\frontend\AboutUsController; 
+use App\Http\Controllers\frontend\AboutUsController;
+use App\Http\Controllers\frontend\RoomController;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,33 +69,16 @@ use App\Http\Controllers\frontend\AboutUsController;
 
 Route::any('/', function () {
     return view('frontend.index');
-});
+})->name('index');
 
 Route::get('/about-us',[AboutUsController::class,'page'])->name('aboutus');
+Route::get('/our-rooms',[RoomController::class,'page'])->name('roomslist');
+Route::get('/room-detail',[RoomController::class,'Detail'])->name('roomsdetail');
 
 Auth::routes();
   Route::any('dashboard', [DashboardController::class, 'index'])->name('dashboard');
   Route::get('/selfcare',[SelfCareController::class,'index'])->name('selfcare');
 
-
-  //salary import (CSV)
-  Route::any('/salary-import',[SalaryController::class,'import'])->name('salaryDataImport');
-  
-
-    // candidate auth
-   Route::any('candidate/login', [CandidateController::class, 'candidateLogin'])->name('candidate.login');
-   Route::any('candidate/signup', [CandidateController::class, 'candidateSignup'])->name('candidate.signup');
-   Route::any('candidate/dashboard', [CandidateController::class, 'candidateDashboard'])->name('candidate.dashboard');    
-
-   // agency auth
-   Route::any('agency/login', [AgencyController::class, 'agencyLogin'])->name('agency.login');
-   Route::any('agency/signup', [AgencyController::class, 'agencySignup'])->name('agency.signup');
-   Route::any('agency/dashboard', [AgencyController::class, 'agencyDashboard'])->name('agency.dashboard');    
-
-   // company auth
-   Route::any('company/login', [CompanyController::class, 'companyLogin'])->name('company.login');
-   Route::any('company/signup', [CompanyController::class, 'companySignup'])->name('company.signup');
-   Route::any('company/dashboard', [CompanyController::class, 'companyDashboard'])->name('company.dashboard');
 
 Route::group(['middleware' => ['auth']], function() {
 
