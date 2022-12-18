@@ -68,7 +68,7 @@
 </ul>
 </li>
 <li><a href="">News</a></li>
-<li><a href="">Contact</a></li>
+<li><a href="{{route('contact_us')}}">Contact</a></li>
 </ul>
 </nav>
 <div id="mobile-menu-wrap"></div>
@@ -145,7 +145,7 @@
 </ul>
 </li>
 <li><a href="blog.html">News</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="{{route('contact_us')}}">Contact</a></li>
 </ul>
 </nav>
 <div class="nav-right search-switch">

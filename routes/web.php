@@ -55,6 +55,7 @@ use App\Http\Controllers\frontend\OfficeVisitorController;
 use App\Http\Controllers\frontend\SalaryController; 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -70,8 +71,12 @@ Route::any('/', function () {
     return view('frontend.index');
 });
 
+
+
 Auth::routes();
-  Route::any('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/contact_us',[frontend\ContactUsController::class, 'contactUs'])->name('contact_us');
+
+Route::any('dashboard', [DashboardController::class, 'index'])->name('dashboard');
   Route::get('/selfcare',[SelfCareController::class,'index'])->name('selfcare');
 
   Route::group(['as'=>'frontend_'],function(){
@@ -367,7 +372,6 @@ Route::group(['middleware' => ['auth']], function() {
    //Route::resource('jobs', JobsController::class);  
    
 });   
-
 
 
 
