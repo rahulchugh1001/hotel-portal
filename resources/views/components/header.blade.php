@@ -8,7 +8,7 @@
 <meta name="keywords" content="Sona, unica, creative, html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Sona | Template</title>
+<title>SP Residence</title>
 
 <link href="https://fonts.googleapis.com/css?family=Lora:400,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&amp;display=swap" rel="stylesheet">
@@ -42,22 +42,13 @@
 <i class="icon_search"></i>
 </div>
 <div class="header-configure-area">
-<div class="language-option">
-<img src="assets/img/flag.jpg" alt="">
-<span>EN <i class="fa fa-angle-down"></i></span>
-<div class="flag-dropdown">
-<ul>
-<li><a href="#">Zi</a></li>
-<li><a href="#">Fr</a></li>
-</ul>
-</div>
-</div>
+
 <a href="#" class="bk-btn">Booking Now</a>
 </div>
 <nav class="mainmenu mobile-menu">
 <ul>
-<li class="active"><a href="index.html">Home</a></li>
-<li><a href="">Rooms</a></li>
+<li class="active"><a href="{{route('index')}}">Home</a></li>
+<li><a href={{route('roomslist')}}">Rooms</a></li>
 <li><a href="">About Us</a></li>
 <li><a href="">Pages</a>
 <ul class="dropdown">
@@ -80,7 +71,7 @@
 </div>
 <ul class="top-widget">
 <li><i class="fa fa-phone"></i> (12) 345 67890</li>
-<li><i class="fa fa-envelope"></i> <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8fe6e1e9e0a1ece0e3e0fde3e6edcfe8e2eee6e3a1ece0e2">[email&#160;protected]</a></li>
+<li><i class="fa fa-envelope"></i> <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8fe6e1e9e0a1ece0e3e0fde3e6edcfe8e2eee6e3a1ece0e2">info@spresidence.com</a></li>
 </ul>
 </div>
 
@@ -92,7 +83,7 @@
 <div class="col-lg-6">
 <ul class="tn-left">
 <li><i class="fa fa-phone"></i> (12) 345 67890</li>
-<li><i class="fa fa-envelope"></i> <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a23242c256429252625382623280a2d272b232664292527">[email&#160;protected]</a></li>
+<li><i class="fa fa-envelope"></i> <a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4a23242c256429252625382623280a2d272b232664292527">info@spresidence.com</a></li>
 </ul>
 </div>
 <div class="col-lg-6">
@@ -105,14 +96,6 @@
 </div>
 <a href="#" class="bk-btn">Booking Now</a>
 <div class="language-option">
-<img src="assets/img/flag.jpg" alt="">
-<span>EN <i class="fa fa-angle-down"></i></span>
-<div class="flag-dropdown">
-<ul>
-<li><a href="#">Zi</a></li>
-<li><a href="#">Fr</a></li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -124,8 +107,8 @@
 <div class="row">
 <div class="col-lg-2">
 <div class="logo">
-<a href="index.html">
-<img src="/../logo-sp.jpg" alt="">
+<a href="{{route('index')}}">
+<img src="{{asset('frontend/img/logo.png')}}" alt="">
 </a>
 </div>
 </div>
@@ -133,19 +116,19 @@
 <div class="nav-menu">
 <nav class="mainmenu">
 <ul>
-<li class="active"><a href="index.html">Home</a></li>
-<li><a href="rooms.html">Rooms</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="pages.html">Pages</a>
+<li class="active"><a href="{{route('index')}}">Home</a></li>
+<li><a href="{{route('roomslist')}}">Rooms</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Pages</a>
 <ul class="dropdown">
-<li><a href="room-details.html">Room Details</a></li>
-<li><a href="blog-details.html">Blog Details</a></li>
+<li><a href="#">Room Details</a></li>
+<li><a href="#">Blog Details</a></li>
 <li><a href="#">Family Room</a></li>
 <li><a href="#">Premium Room</a></li>
 </ul>
 </li>
-<li><a href="blog.html">News</a></li>
-<li><a href="{{route('contact_us')}}">Contact</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Contact</a></li>
 </ul>
 </nav>
 <div class="nav-right search-switch">

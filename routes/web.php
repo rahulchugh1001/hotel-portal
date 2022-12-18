@@ -53,7 +53,8 @@ use App\Http\Controllers\TeamController;
 use App\Http\Controllers\frontend\SelfCareController; 
 use App\Http\Controllers\frontend\OfficeVisitorController; 
 use App\Http\Controllers\frontend\SalaryController; 
-
+use App\Http\Controllers\frontend\AboutUsController;
+use App\Http\Controllers\frontend\RoomController;
 
 
 /*
@@ -69,7 +70,11 @@ use App\Http\Controllers\frontend\SalaryController;
 
 Route::any('/', function () {
     return view('frontend.index');
-});
+})->name('index');
+
+Route::get('/about-us',[AboutUsController::class,'page'])->name('aboutus');
+Route::get('/our-rooms',[RoomController::class,'page'])->name('roomslist');
+Route::get('/room-detail',[RoomController::class,'Detail'])->name('roomsdetail');
 
 
 
@@ -79,43 +84,6 @@ Route::get('/contact_us',[frontend\ContactUsController::class, 'contactUs'])->na
 Route::any('dashboard', [DashboardController::class, 'index'])->name('dashboard');
   Route::get('/selfcare',[SelfCareController::class,'index'])->name('selfcare');
 
-  Route::group(['as'=>'frontend_'],function(){
-   Route::get('/office-visitor/list',[OfficeVisitorController::class,'index'])->name('office_visitor');
-   Route::any('/office-visitor/create',[OfficeVisitorController::class,'create'])->name('office_visitor_create');
-   Route::any('/office-visitor/edit/{id}',[OfficeVisitorController::class,'edit'])->name('office_visitor_edit');
-   Route::any('/office-visitor/delete/{id}',[OfficeVisitorController::class,'deleted'])->name('office_visitor_delete');
-   Route::any('/office-visitor/view/{id}',[OfficeVisitorController::class,'view'])->name('office_visitor_view');
-
-
-   Route::any('/salary/list',[SalaryController::class,'index'])->name('office_salary');
-   // Route::any('/salary/create',[SalaryController::class,'create'])->name('office_salary_create');
-   // Route::any('/salary/edit/{id}',[SalaryController::class,'edit'])->name('office_salary_edit');
-   // Route::any('/salary/delete/{id}',[SalaryController::class,'deleted'])->name('office_salary_delete');
-   Route::any('/salary/view/{id}',[SalaryController::class,'view'])->name('office_salary_view');
-   Route::post('/otp-sending',[SalaryController::class,'OTPSending'])->name('office_salary_otp_sending');
-   Route::post('/otp-verification',[SalaryController::class,'OTPVerification'])->name('office_salary_otp_varification');
-
-  });
-
-
-//   salary import (CSV)
-  Route::any('/salary-import',[SalaryController::class,'import'])->name('salaryDataImport');
-  
-
-    // candidate auth
-   Route::any('candidate/login', [CandidateController::class, 'candidateLogin'])->name('candidate.login');
-   Route::any('candidate/signup', [CandidateController::class, 'candidateSignup'])->name('candidate.signup');
-   Route::any('candidate/dashboard', [CandidateController::class, 'candidateDashboard'])->name('candidate.dashboard');    
-
-   // agency auth
-   Route::any('agency/login', [AgencyController::class, 'agencyLogin'])->name('agency.login');
-   Route::any('agency/signup', [AgencyController::class, 'agencySignup'])->name('agency.signup');
-   Route::any('agency/dashboard', [AgencyController::class, 'agencyDashboard'])->name('agency.dashboard');    
-
-   // company auth
-   Route::any('company/login', [CompanyController::class, 'companyLogin'])->name('company.login');
-   Route::any('company/signup', [CompanyController::class, 'companySignup'])->name('company.signup');
-   Route::any('company/dashboard', [CompanyController::class, 'companyDashboard'])->name('company.dashboard');
 
 Route::group(['middleware' => ['auth']], function() {
 

@@ -5,8 +5,8 @@
 <div class="col-lg-4">
 <div class="ft-about">
 <div class="logo">
-<a href="#">
-<img src="assets/../logo-sp.png" alt="">
+<a href="{{route('index')}}">
+<img src="{{asset('frontend/img/logo.png')}}" alt="">
 </a>
 </div>
 <p>We inspire and reach millions of travelers<br /> across 90 local websites</p>
@@ -24,7 +24,8 @@
 <h6>Contact Us</h6>
 <ul>
 <li>(12) 345 67890</li>
-<li><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d34333b32733e3231322f31343f1d3a303c3431733e3230">[email&#160;protected]</a></li>
+<li><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__"
+     data-cfemail="5d34333b32733e3231322f31343f1d3a303c3431733e3230">info@spresidence.com</a></li>
 <li>856 Cordia Extension Apt. 356, Lake, United State</li>
 </ul>
 </div>
