@@ -49,15 +49,8 @@
 <ul>
 <li class="active"><a href="{{route('index')}}">Home</a></li>
 <li><a href={{route('roomslist')}}">Rooms</a></li>
-<li><a href="">About Us</a></li>
-<li><a href="">Pages</a>
-<ul class="dropdown">
-<li><a href="">Room Details</a></li>
-<li><a href="#">Deluxe Room</a></li>
-<li><a href="#">Family Room</a></li>
-<li><a href="#">Premium Room</a></li>
-</ul>
-</li>
+<li><a href={{route('aboutus')}}">About Us</a></li>
+
 <li><a href="{{route('blog')}}">Blog</a></li>
 <li><a href="{{route('contact_us')}}">Contact</a></li>
 </ul>
@@ -118,15 +111,8 @@
 <ul>
 <li class="active"><a href="{{route('index')}}">Home</a></li>
 <li><a href="{{route('roomslist')}}">Rooms</a></li>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Pages</a>
-<ul class="dropdown">
-<li><a href="#">Room Details</a></li>
-<li><a href="#">Blog Details</a></li>
-<li><a href="#">Family Room</a></li>
-<li><a href="#">Premium Room</a></li>
-</ul>
-</li>
+<li><a href="{{route('aboutus')}}">About Us</a></li>
+
 <li><a href="{{route('blog')}}">Blog</a></li>
 <li><a href="{{route('contact_us')}}">Contact</a></li>
 </ul>

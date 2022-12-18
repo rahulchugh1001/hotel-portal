@@ -79,9 +79,9 @@ Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/about-us',[AboutUsController::class,'page'])->name('aboutus');
 Route::get('/our-rooms',[RoomController::class,'page'])->name('roomslist');
 Route::get('/room-detail',[RoomController::class,'Detail'])->name('roomsdetail');
-Route::get('/contact_us',[ContactUsController::class, 'contactUs'])->name('contact_us');
+Route::get('/contact-us',[ContactUsController::class, 'contactUs'])->name('contact_us');
 Route::get('/blog',[BlogController::class, 'blogIndex'])->name('blog');
-Route::get('/blog-details',[BlogController::class, 'blogDetails'])->name('blog-details');
+Route::get('/blog-detail',[BlogController::class, 'blogDetails'])->name('blog_details');
 
 
 Auth::routes();
