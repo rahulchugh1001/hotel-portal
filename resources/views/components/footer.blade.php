@@ -75,14 +75,14 @@ Copyright &copy;<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728
 </div>
 
 
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/jquery.nice-select.min.js"></script>
-<script src="assets/js/jquery-ui.min.js"></script>
-<script src="assets/js/jquery.slicknav.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="frontend/js/jquery-3.3.1.min.js"></script>
+<script src="frontend/js/bootstrap.min.js"></script>
+<script src="frontend/js/jquery.magnific-popup.min.js"></script>
+<script src="frontend/js/jquery.nice-select.min.js"></script>
+<script src="frontend/js/jquery-ui.min.js"></script>
+<script src="frontend/js/jquery.slicknav.js"></script>
+<script src="frontend/js/owl.carousel.min.js"></script>
+<script src="frontend/js/main.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"77900d773f3410c9","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}' crossorigin="anonymous"></script>
 </body>
 

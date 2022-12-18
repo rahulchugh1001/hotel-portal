@@ -55,6 +55,10 @@ use App\Http\Controllers\frontend\OfficeVisitorController;
 use App\Http\Controllers\frontend\SalaryController; 
 use App\Http\Controllers\frontend\AboutUsController;
 use App\Http\Controllers\frontend\RoomController;
+use App\Http\Controllers\frontend\ContactUsController;
+use App\Http\Controllers\frontend\BlogController;
+use App\Http\Controllers\frontend\IndexController;
+
 
 
 /*
@@ -68,18 +72,19 @@ use App\Http\Controllers\frontend\RoomController;
 |
 */
 
-Route::any('/', function () {
-    return view('frontend.index');
-})->name('index');
-
+// Route::any('/', function () {
+//     return view('frontend.index');
+// })->name('index');
+Route::get('/',[IndexController::class,'index'])->name('index');
 Route::get('/about-us',[AboutUsController::class,'page'])->name('aboutus');
 Route::get('/our-rooms',[RoomController::class,'page'])->name('roomslist');
 Route::get('/room-detail',[RoomController::class,'Detail'])->name('roomsdetail');
-
+Route::get('/contact_us',[ContactUsController::class, 'contactUs'])->name('contact_us');
+Route::get('/blog',[BlogController::class, 'blogIndex'])->name('blog');
+Route::get('/blog-details',[BlogController::class, 'blogDetails'])->name('blog-details');
 
 
 Auth::routes();
-Route::get('/contact_us',[frontend\ContactUsController::class, 'contactUs'])->name('contact_us');
 
 Route::any('dashboard', [DashboardController::class, 'index'])->name('dashboard');
   Route::get('/selfcare',[SelfCareController::class,'index'])->name('selfcare');
