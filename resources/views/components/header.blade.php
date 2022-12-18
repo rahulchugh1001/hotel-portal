@@ -43,13 +43,13 @@
 </div>
 <div class="header-configure-area">
 
-<a href="#" class="bk-btn">Booking Now</a>
+<a href="{{route('contact_us')}}" class="bk-btn">Booking Now</a>
 </div>
 <nav class="mainmenu mobile-menu">
 <ul>
 <li class="active"><a href="{{route('index')}}">Home</a></li>
-<li><a href={{route('roomslist')}}">Rooms</a></li>
-<li><a href={{route('aboutus')}}">About Us</a></li>
+<li><a href="{{route('roomslist')}}">Rooms</a></li>
+<li><a href="{{route('aboutus')}}">About Us</a></li>
 
 <li><a href="{{route('blog')}}">Blog</a></li>
 <li><a href="{{route('contact_us')}}">Contact</a></li>
@@ -87,7 +87,7 @@
 <a href="#"><i class="fa fa-tripadvisor"></i></a>
 <a href="#"><i class="fa fa-instagram"></i></a>
 </div>
-<a href="#" class="bk-btn">Booking Now</a>
+<a href="{{route('contact_us')}}" class="bk-btn">Booking Now</a>
 <div class="language-option">
 </div>
 </div>
